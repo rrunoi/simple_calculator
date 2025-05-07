@@ -8,5 +8,10 @@ int main()
    */
   printf("3 + 3 = %d\n", add(3, 3));
 
+  /**
+   * Print return value from add funtion.
+   */
+  printf("3 - 3 = %d\n", subtract(3, 3));
+
   return 0;
 }
