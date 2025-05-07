@@ -4,7 +4,7 @@
 int main()
 {
   /**
-   * Addition functionality
+   * Print return value from add funtion.
    */
   printf("3 + 3 = %d\n", add(3, 3));
 
