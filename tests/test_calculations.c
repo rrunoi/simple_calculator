@@ -1,5 +1,5 @@
 #include "unity/src/unity.h"
-#include "../include/calculations.h"
+#include "../src/calculations.c"
 
 void setUp(void) {}
 void tearDown(void) {}
@@ -81,7 +81,7 @@ static void test_multiply_one_negative(void)
 
 static void test_multiply_two_negative(void)
 {
-  TEST_IGNORE();
+  // TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(9, multiply(-3, -3));
 }
 
