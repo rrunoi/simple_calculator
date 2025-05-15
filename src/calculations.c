@@ -9,7 +9,7 @@ int add(int value1, int value2)
 }
 
 /**
- * subtraction function
+ * Subtraction function
  */
 int subtract(int value1, int value2)
 {
@@ -17,9 +17,23 @@ int subtract(int value1, int value2)
 }
 
 /**
- * multiplication function
+ * Multiplication function
  */
 int multiply(int value1, int value2)
 {
   return value1 * value2;
+}
+
+/**
+ * Division function
+ */
+int divide(int value1, int value2)
+{
+  if (value2 == 0)
+  {
+    printf("ERROR: Cannot divide by zero.");
+    return -1;
+  }
+
+  return value1 / value2;
 }

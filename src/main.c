@@ -18,5 +18,10 @@ int main()
    */
   printf("3 * 3 = %d\n", multiply(3, 3));
 
+  /**
+   * Print return value from division funtion.
+   */
+  printf("3 / 3 = %d\n", divide(3, 3));
+
   return 0;
 }
