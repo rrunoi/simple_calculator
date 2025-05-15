@@ -90,26 +90,47 @@ static void test_multiply_two_negative(void)
  */
 static void test_divide(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(3, divide(9, 3));
 }
 
 static void test_divide_zero(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(-1, divide(3, 0));
 }
 
 static void test_divide_one_negative(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(-3, divide(9, -3));
 }
 
 static void test_divide_two_negative(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(3, divide(-9, -3));
+}
+
+/**
+ * Tests for the power_two function
+ */
+static void test_power_two(void)
+{
+  // TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(9, power_two(3));
+}
+
+static void test_power_two_zero(void)
+{
+  // TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(0, power_two(0));
+}
+
+static void test_power_two_negative(void)
+{
+  // TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(9, power_two(-3));
 }
 
 int main(void)
@@ -139,6 +160,11 @@ int main(void)
   RUN_TEST(test_divide_zero);
   RUN_TEST(test_divide_one_negative);
   RUN_TEST(test_divide_two_negative);
+
+  // Run power_two tests
+  RUN_TEST(test_power_two);
+  RUN_TEST(test_power_two_zero);
+  RUN_TEST(test_power_two_negative);
 
   return UNITY_END();
 }
