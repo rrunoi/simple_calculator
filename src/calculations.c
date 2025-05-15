@@ -1,4 +1,5 @@
 #include "../include/calculations.h"
+#include <math.h>
 
 /**
  * Addition function
@@ -36,4 +37,12 @@ int divide(int value1, int value2)
   }
 
   return value1 / value2;
+}
+
+/**
+ * Power of 2 function
+ */
+int power_two(int value1)
+{
+  return pow(value1, 2);
 }
