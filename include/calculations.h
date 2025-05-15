@@ -6,5 +6,6 @@ int subtract(int value1, int value2);
 int multiply(int value1, int value2);
 int divide(int value1, int value2);
 int power_two(int value1);
+int power_n(int value1, int value2);
 
 #endif

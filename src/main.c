@@ -24,9 +24,14 @@ int main()
   printf("3 / 3 = %d\n", divide(3, 3));
 
   /**
-   * Print return value from division funtion.
+   * Print return value from power_two funtion.
    */
   printf("3 ^ 2 = %d\n", power_two(3));
+
+  /**
+   * Print return value from power_n funtion.
+   */
+  printf("3 ^ 3 = %d\n", power_n(3, 3));
 
   return 0;
 }

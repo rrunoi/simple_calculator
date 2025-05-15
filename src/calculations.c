@@ -46,3 +46,11 @@ int power_two(int value1)
 {
   return pow(value1, 2);
 }
+
+/**
+ * Power of n function
+ */
+int power_n(int value1, int value2)
+{
+  return pow(value1, value2);
+}
