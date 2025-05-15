@@ -117,20 +117,47 @@ static void test_divide_two_negative(void)
  */
 static void test_power_two(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(9, power_two(3));
 }
 
 static void test_power_two_zero(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(0, power_two(0));
 }
 
 static void test_power_two_negative(void)
 {
-  // TEST_IGNORE();
+  TEST_IGNORE();
   TEST_ASSERT_EQUAL_INT(9, power_two(-3));
+}
+
+/**
+ * Tests for the power_n function
+ */
+static void test_power_n(void)
+{
+  // TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(27, power_n(3, 3));
+}
+
+static void test_power_n_zero(void)
+{
+  // TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(1, power_n(3, 0));
+}
+
+static void test_power_n_one_negative(void)
+{
+  TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(0.0370370, power_n(3, -3));
+}
+
+static void test_power_n_two_negative(void)
+{
+  TEST_IGNORE();
+  TEST_ASSERT_EQUAL_INT(-0.0370370, power_n(-3, -3));
 }
 
 int main(void)
@@ -165,6 +192,12 @@ int main(void)
   RUN_TEST(test_power_two);
   RUN_TEST(test_power_two_zero);
   RUN_TEST(test_power_two_negative);
+
+  // Run power_n tests
+  RUN_TEST(test_power_n);
+  RUN_TEST(test_power_n_zero);
+  RUN_TEST(test_power_n_one_negative);
+  RUN_TEST(test_power_n_two_negative);
 
   return UNITY_END();
 }
