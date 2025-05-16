@@ -1,11 +1,10 @@
 #ifndef CALCULATIONS_H
 #define CALCULATIONS_H
 
-int add(int value1, int value2);
-int subtract(int value1, int value2);
-int multiply(int value1, int value2);
-int divide(int value1, int value2);
-int power_two(int value1);
-int power_n(int value1, int value2);
+float add(float value1, float value2);
+float subtract(float value1, float value2);
+float multiply(float value1, float value2);
+float divide(float value1, float value2);
+float power_n(float value1, float value2);
 
 #endif
