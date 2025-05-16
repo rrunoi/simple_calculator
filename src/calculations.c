@@ -4,7 +4,7 @@
 /**
  * Addition function
  */
-int add(int value1, int value2)
+float add(float value1, float value2)
 {
   return value1 + value2;
 }
@@ -12,7 +12,7 @@ int add(int value1, int value2)
 /**
  * Subtraction function
  */
-int subtract(int value1, int value2)
+float subtract(float value1, float value2)
 {
   return value1 - value2;
 }
@@ -20,7 +20,7 @@ int subtract(int value1, int value2)
 /**
  * Multiplication function
  */
-int multiply(int value1, int value2)
+float multiply(float value1, float value2)
 {
   return value1 * value2;
 }
@@ -28,29 +28,15 @@ int multiply(int value1, int value2)
 /**
  * Division function
  */
-int divide(int value1, int value2)
+float divide(float value1, float value2)
 {
-  if (value2 == 0)
-  {
-    printf("ERROR: Cannot divide by zero.");
-    return -1;
-  }
-
   return value1 / value2;
-}
-
-/**
- * Power of 2 function
- */
-int power_two(int value1)
-{
-  return pow(value1, 2);
 }
 
 /**
  * Power of n function
  */
-int power_n(int value1, int value2)
+float power_n(float value1, float value2)
 {
   return pow(value1, value2);
 }
