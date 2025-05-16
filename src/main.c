@@ -19,13 +19,13 @@ int main()
   switch (operator)
   {
   case '+':
-    printf("%f + %f = %f\n", value1, value2, add(value1, value2));
+    printf("%g + %g = %g\n", value1, value2, add(value1, value2));
     break;
   case '-':
-    printf("%f + %f = %f\n", value1, value2, subtract(value1, value2));
+    printf("%g + %g = %g\n", value1, value2, subtract(value1, value2));
     break;
   case '*':
-    printf("%f + %f = %f\n", value1, value2, multiply(value1, value2));
+    printf("%g + %g = %g\n", value1, value2, multiply(value1, value2));
     break;
   case '/':
     if (value2 == 0)
@@ -33,10 +33,10 @@ int main()
       printf("ERROR: Cannot divide by zero.");
       break;
     }
-    printf("%f + %f = %f\n", value1, value2, divide(value1, value2));
+    printf("%g + %g = %g\n", value1, value2, divide(value1, value2));
     break;
   case '^':
-    printf("%f + %f = %f\n", value1, value2, power_n(value1, value2));
+    printf("%g + %g = %g\n", value1, value2, power_n(value1, value2));
     break;
   default:
     printf("Not a valid operator.");
