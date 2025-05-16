@@ -3,35 +3,45 @@
 
 int main()
 {
-  /**
-   * Print return value from add funtion.
-   */
-  printf("3 + 3 = %d\n", add(3, 3));
+  float value1;
+  float value2;
+  char operator;
 
-  /**
-   * Print return value from subtract funtion.
-   */
-  printf("3 - 3 = %d\n", subtract(3, 3));
+  printf("Enter first number.\n");
+  scanf("%f", &value1);
 
-  /**
-   * Print return value from multiply funtion.
-   */
-  printf("3 * 3 = %d\n", multiply(3, 3));
+  printf("Possible operators: +, -, *, /, ^\n");
+  scanf("%s", &operator);
 
-  /**
-   * Print return value from division funtion.
-   */
-  printf("3 / 3 = %d\n", divide(3, 3));
+  printf("Enter second number.\n");
+  scanf("%f", &value2);
 
-  /**
-   * Print return value from power_two funtion.
-   */
-  printf("3 ^ 2 = %d\n", power_two(3));
-
-  /**
-   * Print return value from power_n funtion.
-   */
-  printf("3 ^ 3 = %d\n", power_n(3, 3));
+  switch (operator)
+  {
+  case '+':
+    printf("%f + %f = %f\n", value1, value2, add(value1, value2));
+    break;
+  case '-':
+    printf("%f + %f = %f\n", value1, value2, subtract(value1, value2));
+    break;
+  case '*':
+    printf("%f + %f = %f\n", value1, value2, multiply(value1, value2));
+    break;
+  case '/':
+    if (value2 == 0)
+    {
+      printf("ERROR: Cannot divide by zero.");
+      break;
+    }
+    printf("%f + %f = %f\n", value1, value2, divide(value1, value2));
+    break;
+  case '^':
+    printf("%f + %f = %f\n", value1, value2, power_n(value1, value2));
+    break;
+  default:
+    printf("Not a valid operator.");
+    break;
+  }
 
   return 0;
 }
